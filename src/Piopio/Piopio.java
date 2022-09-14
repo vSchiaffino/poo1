@@ -29,9 +29,12 @@ public class Piopio {
 	
 	public void irAKilometro(int kilometro)
 	{
-		int distanciaARecorrer = this.calcularDistancia(kilometro);
-		this.volar(distanciaARecorrer);
-		this.setPosicion(kilometro);
+		if(this.puedeIr(kilometro))
+		{
+			int distanciaARecorrer = this.calcularDistancia(kilometro);
+			this.volar(distanciaARecorrer);
+			this.setPosicion(kilometro);			
+		}
 	}
 	
 	public void comer(int gramosComidos)
