@@ -3,15 +3,11 @@ package Piopio;
 public class Main {
 
 	public static void main(String[] args) {
-		Piopio piopio = new Piopio();
-		piopio.comer(100);
+		Piopio piopio = new Piopio(122);
+		piopio.comer(25);
+		
 		System.out.println(piopio);
-		piopio.volar(10);
-		System.out.println(piopio);
-		piopio.volar(200);
-		System.out.println(piopio);
-		piopio.volar(10);
-		System.out.println(piopio);
+		System.out.println(String.format("puedo ir a mar del plata? %b", piopio.puedeIr(400)));
 	}
 
 }
